@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useCookies } from 'react-cookie';
 
-export default function Login(){
+export default function Login() {
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
   const [estado, setEstado] = useState('Inicia Session');
@@ -26,7 +26,7 @@ export default function Login(){
         } else {
           console.error(response.data.msg);
         }
-      }).catch(()=>console.error());
+      }).catch(() => console.error());
   };
 
   const handleSubmitRegister = (event: React.FormEvent<HTMLFormElement>) => {
@@ -46,7 +46,7 @@ export default function Login(){
         } else {
           console.error(response.data.msg);
         }
-      }).catch(()=>console.error());
+      }).catch(() => console.error());
   };
 
   const handleClickRegister = () => {
